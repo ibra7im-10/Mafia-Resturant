@@ -1,0 +1,107 @@
+
+/******************************** start-banar***************************************************/
+.banar{
+    height: 500px;
+}
+/******************************** end-banar***************************************************/
+
+
+/******************************** start-desc***************************************************/
+.desc{
+    margin: 100px 0;
+}
+.desc .text-content{
+    padding: 30px 20px;
+    margin-top: 80px;
+    text-align: end;
+}
+.desc .text-content h1{
+    font-weight: bold;
+}
+.desc .text-content span{
+font-weight: bold;
+font-size: 70px;
+color: var(--secondaryColor);
+}
+.desc .text-content p{
+    color: rgb(85, 85, 85);
+    font-size: 20px;
+    margin-top: -50px;
+}
+.desc .text-content h3{
+color: var(--secondaryColor);
+font-weight: bold;
+}
+.desc .image img{
+width: 100%;
+height: 700px;
+object-fit: cover;
+}
+/******************************** end-desc***************************************************/
+
+
+/******************************** start-cheefs  ***************************************************/
+.cheefs .cheef{
+width: 350px;
+margin-bottom: 80px;
+text-align: end;
+}
+.cheefs .cheef img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.cheefs .cheef h4{
+    color: rgb(87, 87, 87);
+    font-size: 20px;
+}
+.cheefs .cheef h1{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.cheefs .cheef p{
+    color: rgb(83, 83, 83);
+    font-size: 18px;
+}
+.cheefs .cheef ul li a{
+    color: var(--secondaryColor);
+    font-size: 32px;
+}
+/******************************** end-cheefs  ***************************************************/
+
+
+/******************************** start-awesome  ***************************************************/
+.awesome a{
+    color: var(--secondaryColor);
+    border: 2px solid var(--secondaryColor);
+    padding: 10px 20px;
+}
+.awesome .text-content h3{
+    margin-top: 25px;
+    font-size: 25px;
+}
+footer{
+    margin-top: -120px;
+}
+/******************************** end-awesome  ***************************************************/
+
+/******************************** start-responsive ***************************************************/
+@media ( max-width:480px) {
+        .awesome a{
+            color: var(--secondaryColor);
+            border: 2px solid var(--secondaryColor);
+            padding: 10px;
+            font-size: 16px;
+        }
+        .awesome .text-content h3{
+            margin-top: 25px;
+            font-size: 20px;
+        }
+  }
+/******************************** end-responsive ***************************************************/
+
+
+

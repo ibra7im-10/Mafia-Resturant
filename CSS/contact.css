@@ -1,0 +1,60 @@
+
+/******************************** start-banar***************************************************/
+.banar{
+    height: 500px;
+}
+/******************************** end-banar***************************************************/
+
+/******************************** start-time***************************************************/
+.time{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.time .contact i,
+.time .time-work h1{
+    color: var(--secondaryColor);
+}
+/******************************** end-time***************************************************/
+
+/******************************** start-maps***************************************************/
+.maps{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.maps .map-desc{
+    text-align: center;
+    box-shadow: 1px 1px 15px 5px #ddd;
+    border-radius: 20px;
+    padding: 50px 30px;
+}
+.maps .map-desc h4{
+    color: var(--secondaryColor);
+}
+/******************************** end-maps***************************************************/
+
+/******************************** start-responsive ***************************************************/
+@media ( max-width:1200px) {
+    .maps{
+        flex-wrap: wrap;
+    }
+}
+@media ( max-width:768px) {
+    .maps .map-photo{
+        width: 500px;
+    }
+    .maps .map-photo iframe{
+        width: 100%;
+    }
+}
+@media ( max-width:600px) {
+    .maps .map-photo{
+        width: 300px;
+    }
+    .maps .map-photo iframe{
+        width: 100%;
+    }
+}
+/******************************** end-responsive ***************************************************/
+
+
+

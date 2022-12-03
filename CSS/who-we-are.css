@@ -1,0 +1,95 @@
+
+/******************************** start-banar***************************************************/
+.banar{
+    height: 500px;
+}
+/******************************** end-banar***************************************************/
+
+
+/******************************** start-welcome***************************************************/
+.welcome .test .text-content{
+    margin-right: 0px;
+}
+
+.awesome{
+    margin-bottom: 0;
+}
+.awesome a{
+    color: var(--secondaryColor);
+    border: 2px solid var(--secondaryColor);
+    padding: 10px 20px;
+}
+.awesome .text-content h3{
+    margin-top: 25px;
+    font-size: 25px;
+}
+/******************************** end-welcome***************************************************/
+
+
+/******************************** start-visite***************************************************/
+.visite{
+    margin-bottom: 80px;
+}
+.visite .text-content{
+text-align: center;
+padding: 40px 30px;
+box-shadow: 1px 5px 10px 5px #ddd;
+width: 450px;
+}
+.visite .text-content h4{
+color: var(--secondaryColor);
+}
+.visite .text-content h1{
+font-weight: bold;
+}
+.visite .text-content p{
+color: rgb(94, 94, 94);
+}
+.visite div{
+width: 350px;
+height: 350px;
+border-radius: 10px;
+overflow: hidden;
+}
+.visite div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.visite  img{
+    transition: ease 0.5s;
+    filter: contrast(1);
+}
+.visite  img:hover{
+    transform: scale(1.1);
+    filter: contrast(0.4);
+}
+footer{
+    margin-top: 0;
+}
+/******************************** end-visite***************************************************/
+
+
+/******************************** start-responsive ***************************************************/
+@media ( max-width:992px) {
+    .visite{
+        flex-wrap: wrap;
+    }
+}
+
+@media ( max-width:480px) {
+        .awesome a{
+            color: var(--secondaryColor);
+            border: 2px solid var(--secondaryColor);
+            padding: 10px;
+            font-size: 16px;
+        }
+        .awesome .text-content h3{
+            margin-top: 25px;
+            font-size: 20px;
+        }
+  }
+/******************************** end-responsive ***************************************************/
+
+
+

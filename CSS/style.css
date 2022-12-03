@@ -1,0 +1,556 @@
+:root{
+    --mainColor:rgb(44, 44, 44);
+    --secondaryColor:#f3ab1ab6;
+}
+body{
+    font-family: 'Alexandria', sans-serif;
+}
+.container-two{
+    width: 90%;
+    margin: auto;
+}
+/************************************* start spinner **********************************************/
+.spinner{
+    width: 100%;
+    height: 100%;
+    background-color:#f36f02 ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+}
+
+
+.sk-cube-grid {
+    width: 50px;
+    height: 50px;
+    margin: 330px auto;
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+/************************************* end spinner **********************************************/
+
+
+/******************************** start f-head ***************************************************/
+.f-head{
+    background-color: var(--mainColor);
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.f-head .left ul{
+list-style-type: none;
+}
+.f-head .left ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.f-head .left ul li i{
+    font-size: 18px;
+    color: #fff;
+    transition: ease 0.3s;
+}
+.f-head .left ul li i:hover,
+.f-head .right div:hover{
+    color: var(--secondaryColor);
+}
+
+.f-head .right{
+    display: flex;
+    margin-right: 50px;
+    gap: 20px;
+    font-size: 18px;
+}
+.f-head .right div{
+    display: flex;
+    transition: ease 0.3s;
+}
+.f-head .right i{
+    margin: 15px 0px 0px 10px;
+}
+/******************************** end f-head ***************************************************/
+
+/******************************** start-nav***************************************************/
+.nav .menu-icon{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    display: none;
+    cursor: pointer;
+}
+.nav .menu-icon span{
+width: 30px;
+height: 4px;
+margin-bottom: 4px;
+background-color: rgb(197, 153, 31);
+display: block;
+border-radius: 4px;
+}
+.nav{
+    position: sticky;
+    top: -1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    line-height: 70px;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow:  0px 5px 10px 1px rgb(105, 105, 105);
+    transition: ease 0.5s;
+}
+.nav .links ul{
+   margin-left: 350px;
+}
+.nav .links ul li{
+display: inline-block;
+font-size: 20px;
+margin-left: 20px;
+font-weight: 900;
+}
+.nav .links ul li a{
+    text-decoration: none;
+    color: var(--mainColor);
+    transition: ease 0.3s;
+}
+.nav .links ul li a:hover{
+    color: var(--secondaryColor);
+}
+
+.nav .logo{
+    width: 300px;
+    text-align: center;
+    color: rgb(197, 153, 31);
+    font-weight: 400;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-transform: uppercase;
+    align-items: center;
+    cursor: pointer;
+}
+
+#topBtn{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10000000;
+    background-color:rgb(255, 255, 255);
+    border: 3px solid rgb(197, 153, 31);
+    display: none;
+}
+#topBtn i{
+    font-size: 28px;
+    color: rgb(197, 153, 31);
+}
+/******************************** end-nav***************************************************/
+
+/******************************** start-banar***************************************************/
+.banar{
+    height: 650px;
+    background-image: url(../Images/reservation-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.banar .overlay{
+    background-color: rgba(36, 36, 36, 0.925);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.banar  .text-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.banar  .text-content h1{
+color: var(--secondaryColor);
+}
+.banar  .text-content h3{
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.banar  .text-content h3,
+.banar  .text-content p{
+    color:rgb(207, 207, 207);
+}
+/******************************** end-banar***************************************************/
+
+/******************************** start-welcome***************************************************/
+.welcome{
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+   
+}
+.welcome h3{
+    color: var(--secondaryColor);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.welcome .welcoms span {
+    position: relative;
+  }
+.welcome .welcoms span::after {
+    content: "";
+    background-color: var(--secondaryColor);
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    left: 70px;
+    bottom: 7px;
+  }
+.welcome .welcoms span::before{
+    content: "";
+    background-color: var(--secondaryColor);
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    left: -150px;
+    bottom: 7px;
+  }
+
+.welcome .photos{
+    display: flex;
+    gap: 10px;
+}
+.welcome .photos img{
+    transition: ease 0.5s;   
+    filter: contrast(1);
+    height: 500px;
+    max-width: 400px;
+}
+.welcome .photos div{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.welcome .photos img:hover{
+    transform: scale(1.1);
+    filter: contrast(0.4);
+}
+
+.welcome .test .text-content{
+height: 450px;
+margin-right: -50px;
+margin-top: 20px;
+text-align: center;
+box-shadow: 1px 1px 10px rgb(187, 187, 187);
+padding: 80px 40px;
+border-radius: 20px;
+z-index: 99;
+background-color: #fff;
+
+}
+.welcome .text-content h4{
+color: var(--secondaryColor);
+}
+.welcome .text-content h1{
+    font-weight: bold;
+}
+.welcome .text-content p{
+    color: rgb(78, 78, 78);
+}
+/******************************** end-welcome***************************************************/
+
+/******************************** start-awesome***************************************************/
+.awesome{
+margin-bottom: 120px;
+}
+.awesome{
+    height: 450px;
+    background-image: url(../Images/reservation-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.awesome .overlay{
+    background-color: rgba(36, 36, 36, 0.925);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.awesome  .text-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.awesome  .text-content h1{
+    color: var(--secondaryColor);
+}
+.awesome  .text-content h3{
+        font-size: 70px;
+        font-weight: bold;
+        margin-top: -15px;
+}
+.awesome  .text-content h3{
+        color:rgb(207, 207, 207);
+}
+/******************************** end-awesome***************************************************/
+
+/******************************** start-cards ***************************************************/
+.cards .pro img{
+   width: 100%;
+   height: 200px;
+}
+.cards .pro:hover{
+    filter: contrast(.5);
+}
+.cards .pro{
+ margin-bottom: 30px;
+ max-width: 300px;
+ transition: ease 0.3s;
+ filter: contrast(1);
+ box-shadow: 1px 2px 10px 2px rgb(185, 185, 185);
+ border: 4px solid var(--secondaryColor);
+ border-radius: 10px;
+ overflow: hidden;
+}
+.cards .pro h3{
+    font-weight: bold;
+    color: var(--mainColor);
+ }
+/******************************** end-cards ***************************************************/
+
+/******************************** start-footer ***************************************************/
+footer{
+    padding: 50px;
+    margin-top: 120px;
+    margin-bottom: -10px;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+}
+footer li{
+    cursor: pointer;
+    transition: ease 0.3s;
+    font-size: 18px;
+}
+footer .links li:hover{
+   color:#fff;
+}
+footer .lastLinks li:nth-child(1):hover,
+footer .lastLinks li:nth-child(2):hover{
+    color:#fff;
+ }
+footer div li:first-child{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer .social li{
+    font-size: 28px;
+    transition: ease 0.3s;
+}
+footer .social li:hover{
+    font-size: 28px;
+    color: #fff;
+}
+.finish{
+    background-color: rgb(167, 131, 32);
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+}
+.finish span{
+    color: rgb(68, 52, 4);
+}
+/******************************** end-footer ***************************************************/
+
+/******************************** start-responsive ***************************************************/
+@media ( max-width:1200px) {
+
+    .nav ul.open{
+        background-color: rgba(216, 216, 216, 0.466);
+        display: block;
+        position: absolute;
+        padding:0px 5px;
+        width: 90%;
+        right: 85px;
+        top: 80px;
+        border-radius: 5px;
+        border: 3px solid var(--secondaryColor);
+    }
+    .nav ul.open li{
+        display: block;
+        text-align: left;
+    }
+    .nav ul.open li a{
+        color: var(--secondaryColor);
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .nav ul.open li a:hover{
+        color: var(--mainColor);
+    }
+
+    .nav .menu-icon{
+       display: block;
+    }
+    .nav ul{
+        display: none;
+    }
+    .welcome .test{
+        flex-direction: column;
+    }
+    .welcome .test .text-content{
+        margin: 40px auto;
+    }
+    .welcome .test .photos{
+        justify-content: center;
+    }
+}
+@media ( max-width:992px) {
+    .nav ul.open{
+        top: 80px;
+        right: 65px;
+    }
+
+    .f-head{
+        display: none;
+    }
+}
+@media ( max-width:768px) {
+
+    .nav ul.open{
+        top: 80px;
+        right: 40px;
+    }
+
+    .cards .pro{
+    margin-left: 85px;
+    }
+}
+@media ( max-width:520px) {
+    .cards .pro{
+    margin-left: 70px;
+    }
+}
+@media ( max-width:480px) {
+
+    @media ( max-width:600px) {
+        .banar .text-content h3{
+            font-size: 40px;
+            }
+    }
+    .nav ul.open{
+        top: 80px;
+        right: 15px;
+    }
+     
+    .nav .logo{
+        width: 200px;
+        font-size: 20px;
+    }
+    #topBtn{
+        width: 30px;
+        height: 30px;
+        line-height: 25px;
+    }
+    #topBtn i{
+        font-size: 16px;
+        margin-left: -1px;
+    }
+    .cards .pro{
+        margin-left: 50px;
+        }
+    
+        .finish{
+            font-size: 11px;
+        }
+}
+@media ( max-width:450px) {
+
+    .cards .pro{
+    margin-left: 40px;
+    }
+}
+@media ( max-width:430px) {
+
+    .cards .pro{
+    margin-left: 30px;
+    }
+}
+@media ( max-width:430px) {
+
+    .cards .pro{
+    margin-left: 20px;
+    }
+}
+/******************************** end-responsive ***************************************************/
+
+
+
